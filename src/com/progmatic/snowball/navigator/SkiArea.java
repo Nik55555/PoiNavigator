@@ -1713,7 +1713,7 @@ public class SkiArea {
 
     public static void main(String[] args) {
         // список всех LD из json
-        SkiArea skiArea = new SkiArea("C:/!SkiAreas/207/data.json", "C:/!SkiAreas/207/pois.json");
+        SkiArea skiArea = new SkiArea("./areas/207/data.json", "./areas/207/pois.json");
         try {
             //TreeMap<NodalPoint, ArriveInfo> arrives = skiArea.recalcTimeToFinish(new GeoPoint(47.1999652855942,11.9190948665161));
             TreeMap<NodalPoint, ArriveInfo> arrives = skiArea.recalcTimeToFinish(new GeoPoint(47.2631230546233, 11.9955315841124));
