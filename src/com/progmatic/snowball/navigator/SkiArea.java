@@ -1711,6 +1711,17 @@ public class SkiArea {
         return dejkstra.arrives;
     }
 
+
+
+    //        1. GeoPoint - географическая координата
+    //        2. LayerData - информация о дороге
+    //        3. Connection - дорога без направления
+    //        4. Transition - направленная дорога со ссылками на узлы графа (NodalPoint)
+    //        5. NodalPoint - узел графа дорог
+    //        6. ArriveInfo - информация о времени движения от/до какой-то NodalPoint
+    //        7. POI - достопримечательность (point of interest)
+    //        8. OnPisteRoute - маршрут
+
     public static void main(String[] args) {
         // список всех LD из json
         SkiArea skiArea = new SkiArea("./areas/207/data.json", "./areas/207/pois.json");
