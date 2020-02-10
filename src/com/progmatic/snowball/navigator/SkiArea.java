@@ -1724,14 +1724,14 @@ public class SkiArea {
 
     public static void main(String[] args) {
         // список всех LD из json
-        SkiArea skiArea = new SkiArea("./areas/207/data.json", "./areas/207/pois.json");
+        SkiArea skiArea = new SkiArea("./areas/132/data.json", "./areas/132/pois.json");
         try {
             //TreeMap<NodalPoint, ArriveInfo> arrives = skiArea.recalcTimeToFinish(new GeoPoint(47.1999652855942,11.9190948665161));
-            TreeMap<NodalPoint, ArriveInfo> arrives = skiArea.recalcTimeToFinish(new GeoPoint(47.2631230546233, 11.9955315841124));
+            TreeMap<NodalPoint, ArriveInfo> arrives = skiArea.recalcTimeToFinish(new GeoPoint(47.1982868525548, 11.9113846977339));
             for (var entry : arrives.entrySet()) {
                 NodalPoint np = entry.getKey();
                 ArriveInfo ai = entry.getValue();
-                //if (!entry.getKey().poiList.isEmpty())
+                if (!entry.getKey().poiList.isEmpty())
                     System.out.println(np + "; time to finish: " + ai.durationToFinish + "; " + np.poiList);
             }
             System.out.println(arrives.size());
@@ -1740,8 +1740,8 @@ public class SkiArea {
         }
 
         // пример построения маршрута (кратчайший маршрут)
-        GeoPoint start = new GeoPoint(47.2631230546233, 11.9955315841124);
-        GeoPoint finish = new GeoPoint(47.26236473249, 12.1062837610822);
+        GeoPoint start = new GeoPoint(47.1982868525548, 11.9113846977339);
+        GeoPoint finish = new GeoPoint(47.206030235868, 11.873995906905);
         OnPisteRoute fastestRoute = OnPisteNavigator.fastestRouteDejkstra(skiArea, start, finish);
         System.out.println(fastestRoute);
     }

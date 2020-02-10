@@ -25,8 +25,8 @@ public class Navigator {
     protected final static int flatSurfaceAltitudeDifference = 3; // in meters
     protected final static double flatSurfaceCathetusDiv = 0.035; // СЃРѕРѕС‚РЅРѕС€РµРЅРёРµ РєР°С‚РµС‚РѕРІ
     protected final static int criticalOneStepAltDiff = 1; // in meters
-    protected final static double avgPisteSpeed = 7; // m/s
-    protected final static double avgLiftSpeed = 3; // m/s
+    protected final static double avgPisteSpeed = 1.5; // m/s
+    protected final static double avgLiftSpeed = 1.5; // m/s
     protected final static double liftConnectionTime = 60; //sec
     protected final static double arrivalPrec = 20 * 60; // sec
     protected final static double latePrec = 5 * 60; // sec
